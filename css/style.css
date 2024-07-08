@@ -1,0 +1,157 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #2e3132;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    width: 1200px;
+    font-weight: 400;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+header, nav, section, main, footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Navigation*/
+
+nav .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.menu-nav-header {
+    display: flex;
+    gap: 1.5em;
+}
+
+.item_menu-nav-header a {
+    padding: 0 0 15px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.item_menu-nav-header:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+.title-nav_header {
+    font-size: 1.5rem;
+}
+
+
+/*Header*/
+
+header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    gap: 2em;
+}
+
+
+/*Main*/
+
+main {  
+    flex-direction: column;
+}
+
+
+/*Article*/
+article {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer*/
+
+footer .container {
+    flex-direction: column;
+    align-self: center;
+    height: 350px;
+    margin: 2em 0;
+}
+
+.title-footer {
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+.info_footer {
+    display: flex;
+    gap: 5em;
+}
+
+.credits a {
+    color: #9c8f82;;
+}
+
+
+/*Responsivite*/
+
+@media (max-width:1256px) {
+    .container {
+        padding: 0 3em;
+    }
+}
+
+@media (max-width:505px) {
+    nav .container {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 2em 0;
+        gap: 1em;
+    }
+
+    .title-nav_header {
+        display: none;
+    }
+
+    footer .container {
+        align-items: center;
+        padding: 0;
+    }
+
+    .info_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .title-footer {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .credits {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
